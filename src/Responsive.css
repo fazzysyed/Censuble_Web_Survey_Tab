@@ -1,0 +1,2136 @@
+/* ----------- Galaxy Tab 2 ----------- */
+/* Portrait */
+@media 
+  (max-device-width: 800px) 
+  and (orientation: portrait) { 
+    .stars-image-tab {
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+    .best-stars-tab {
+        top: 279px !important;
+        right: 28px !important;
+        font-size: 18px !important;
+    }
+    .images-survey {
+        margin-left: 31px !important;
+        margin-right: 31px !important;
+    }
+    .stars-image {
+        margin-left: 22px !important;
+        margin-right: 22px !important;
+    }
+    .worst {
+        left: -140px !important;
+    }
+    .best-stars {
+        top: 340px !important;
+        right: 50px !important;
+    }
+}
+
+/* Landscape */
+@media 
+  (max-device-width: 1280px) 
+  and (orientation: landscape) { 
+    .worst {
+        font-size: 20px;
+        left: -180px;
+    }
+    .best {
+        font-size: 20px;
+        right: 150px;
+    }
+    
+}
+
+
+/* Iphone 4 & 4S
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .images-survey {
+        margin-left: 18px !important;
+        margin-right: 18px !important;
+    }
+    .censuable {
+        font-size: 12px;
+    }
+    .icon-close {
+        margin-top: auto;
+    }
+    button > span {
+        font-size: 10px;
+    }
+    .prev-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .next-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .progress {
+        height: 5px;
+    }
+    .question-text-tab {
+        font-size: 15px !important;
+    }
+    .best-stars-tab {
+        top: 217px !important;
+        right: 20px !important;
+        font-size: 11px !important;
+    }
+    .question-text {
+        font-size: 15px !important;
+    }
+    .stars-image {
+        margin-left: 8px !important;
+    }
+    .worst {
+        top: 65px !important;
+        left: -53px !important;
+    }
+    .best-stars {
+        top: 253px !important;
+        right: 32px !important;
+    }
+}
+/* Landscape */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    img {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    }
+    .progress {
+        height: 5px;
+    }
+    .prev-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .next-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .censuable {
+        font-size: 12px;
+    }
+    .icon-close {
+        margin-top: auto;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    .censuable {
+        font-size: 16px;
+    }
+    .icon-close {
+        margin-top: auto;
+    }
+    .progress {
+        height: 5px;
+    }
+    .prev-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .next-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .images-survey {
+        margin-left: 18px !important;
+        margin-right: 18px !important;
+        margin-top: 10px !important;
+    }
+    .heart-image {
+        margin-right: 11px !important;
+        margin-left: 10px;
+    }
+    .worst {
+        top: 105px !important;
+        left: -95px !important;    
+        font-size: 15px;
+    }
+    .best {
+        top: 340px;
+        right: 113px;
+        font-size: 15px;
+    }
+    .worst-stars {
+        top: 240px;
+        left: -185px;
+    }
+    .best-stars {
+        top: 312px !important;
+        right: 126px !important;
+        font-size: 15px;
+    }
+    .ring-image {
+        width: 64px;
+    height: 64px;
+    margin-left: 28px !important;
+    margin-right: 28px !important;
+        
+    }
+    .ring-text {
+        font-size: 10px !important;
+        height: 40px;
+        margin-left: 28px;
+    }
+    .ring-text-tab {
+        margin-left: 0 !important;
+        height: 50px;
+        margin-top: 0;
+    }
+    .ring-data {
+        width: 20%;
+    }
+    .prev-btn {
+        margin-top: 30px !important;
+    }
+    .next-btn {
+        margin-top: 30px !important;
+    }
+    .question-text {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .suggestion-box {
+        margin-top: 0px;
+        height: 120px;
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+    .questions {
+        width: 100% !important;
+        height: 50px !important;
+        padding-top: 0% !important;
+    }
+    .questions > p {
+        font-size: 18px !important;
+        padding-top: 10px;
+    }
+    .survey-btn {
+        margin-top: 150px !important;
+        font-size: 20px !important;
+    }
+    .main-box-tab {
+        max-width: 600px;
+        min-width: 600px;
+        }
+    .censuable-tab {
+        font-size: 10px;
+    }
+    .icon-expand {
+        font-size: 1rem;
+        margin-top: 1px;
+    }
+    .icon-close {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .question-text-tab {
+        font-size: 14px;
+        /* margin-bottom: 0 !important;
+        margin-top: 0 !important; */
+    }
+    .images-survey-tab {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+        margin-bottom: 20px;
+        width: 15% !important;
+    }
+    .next-btn2-tab {
+        width: 30% !important;
+        padding: 8px !important;
+    }
+    .questions-tab {
+        margin-top: 10px !important;
+        height: 45px !important;
+        padding: 5px !important;
+        height: 30px !important;
+    }
+    .questions-tab > p {
+        font-size: 12px !important;
+        padding-top: 1px;
+    }
+    .prev-btn-tab {
+        width: 30%;
+        padding: 10px !important;
+    }
+    .next-btn-tab {
+        width: 30%;
+        padding: 10px !important;
+    }
+    
+    .question-text-tab {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .stars-image-tab {
+        margin-right: 20px !important;
+        width: 12% !important;
+        margin-left: 22px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 18px;
+        margin-top: 14px;
+    }   
+    
+    .best-stars-tab {
+    top: 203px !important;
+    right: 56px;
+    font-size: 12px !important;
+    }
+    .heart-image-tab {
+        margin-right: 11px;
+        margin-left: 11px;
+        margin-bottom: 50px;
+    }
+    .best-tab {
+        top: 10px;
+        left: 472px;
+        font-size: 12px;
+    }
+    .worst-tab {
+        top: 70px;
+        left: -90px;
+        font-size: 12px
+    }
+    .best-heart-tab {
+        top: -40px;
+        left: 432px;
+        font-size: 14px;
+    }
+    .worst-heart-tab {
+        top: 90px;
+        left: -98px;
+        font-size: 14px
+    }
+    .ring-image-tab {
+        margin-bottom: 50px;
+        margin-right: 34px;
+        margin-left: 12px;
+    }
+    .next-btn2-tab2 {
+        right: 0;
+    }
+    .suggestion-box-tab {
+        margin-top: 0;
+    }
+    .feedback-box-tab {
+        margin-top: 0;
+        height: 130px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .feedback-text-tab {
+        font-size: 15px;
+    }
+    .question-number {
+        font-size: 12px;
+    }
+    .question-number-tab {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .stars-image {
+        margin-left: 10px;
+        margin-right: 10px !important;
+    }
+    .thankyou-tick-tab {
+        margin-bottom: 60px;
+    }
+    .main-box {
+        max-width: 500px;
+        min-width: 500px;
+    }
+
+
+}
+
+/* Iphone 5 series */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    
+    .images-survey {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        width: 25% !important;
+        margin-top: 10px !important;
+    }
+    .heart-image {
+        margin-right: 4px !important;
+        margin-left: 4px;
+        width: 15% !important;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    .worst {
+        top: 60px;
+        left: -49px;
+        font-size: 10px;
+    }
+    .best {
+        top: 243px;
+        right: 62px;
+        font-size: 11px;
+    }
+    .best-stars {
+        right: 65px;
+        top: 243px;
+        font-size: 10px;
+    }
+    .worst-stars {
+        top: 180px;
+    }
+    .ring-image {
+        width: 30px;
+        height: 30px;
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        
+    }
+    .ring-text {
+        font-size: 7px !important;
+        height: 20px;
+    }
+    .ring-data {
+        width: 20%;
+    }
+    .prev-btn {
+        margin-top: 30px !important;
+    }
+    .next-btn {
+        margin-top: 30px !important;
+    }
+    .question-text {
+        margin-top: 15px;
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    .suggestion-box {
+        margin-top: 0px;
+        height: 180px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .feedback-image {
+        margin-top: 15px;
+    }
+    .feedback-box {
+        margin-top: 25px;
+        font-size: 15px;
+        height: 125px;
+        margin-bottom: 25px;
+    }
+    .submit-btn {
+        width: 50%;
+        padding: 9px !important;
+    }
+    .feedback-text {
+        font-size: 15px;
+    }
+    .feedback-box {
+        margin-top: 0px;
+    }
+    .next-btn2 {
+        width: 50%;
+        padding: 8px !important
+    }
+    .questions {
+        width: 100% !important;
+        height: 50px !important;
+        padding-top: 0% !important;
+    }
+    .questions > p {
+        font-size: 15px !important;
+        padding-top: 14px;
+    }
+    .survey-btn > span {
+        font-size: 15px;
+    }
+    .main-box-tab {
+        max-width: 300px;
+        min-width: 300px;
+    }
+    .censuable-tab {
+        font-size: 8px;
+    }
+    .icon-expand {
+        font-size: 1rem;
+        margin-top: 1px;
+    }
+    .icon-close {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .question-text-tab {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    .images-survey-tab {
+        margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-bottom: 30px;
+    }
+    .next-btn2-tab {
+        width: 40%;
+        padding: 8px;
+    }
+    .questions-tab {
+        margin-top: 10px !important;
+        height: 45px !important;
+    }
+    .questions-tab > p {
+        font-size: 15px !important;
+        padding-top: 1px;
+    }
+    .prev-btn-tab {
+        width: 42%;
+        padding: 12px !important;
+    }
+    .next-btn-tab {
+        width: 42%;
+        padding: 12px !important;
+    }
+    .best-stars-tab {
+        top: 195px;
+        right: 23px;   
+    }
+    .worst-tab {
+       font-size: 11px;
+        top: 62px;
+        left: -58px;
+    }
+    .next-btn2-tab {
+        padding: 8px !important;
+    }
+    .heart-image-tab {
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+    .best-tab {
+        top: 10px;
+        left: 184px;
+        font-size: 11px;
+    }
+    .ring-text-tab {
+        font-size: 9px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: -17px;
+        height: 30px;
+    }
+    .next-btn2-tab2 {
+        right: 0px;
+    }
+    .suggestion-box-tab {
+        margin-top: 0;
+        font-size: 12px;
+        height: 130px;
+    }
+    .feedback-box-tab {
+        margin-top: 0;
+        height: 130px;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    .feedback-text-tab {
+        font-size: 12px;
+    }
+    .question-number {
+        font-size: 10px;
+    }
+    .main-box {
+        max-width: 300px;
+        min-width: 300px;
+        height: 465px;
+        margin-bottom: 34px;
+    }
+    .question-number-tab {
+        font-size: 11px;
+    }
+    .stars-image-tab {
+        margin-left: 6px !important;
+        margin-right: 6px !important;
+        margin-top: 20px !important;
+    }
+    .circular-chart {
+        width: 55%;
+    }
+    .thankyou-tick > h2 {
+        font-size: 25px !important;
+    }
+   
+}   
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    .censuable {
+        font-size: 15px;
+    }
+    .icon-close {
+        margin-top: auto;
+    }
+    .progress {
+        height: 5px;
+    }
+    .prev-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    } 
+    .next-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .images-survey {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        margin-top: 10px !important;
+    }
+    .heart-image {
+        margin-right: 34px !important;
+        width: 13% !important;
+        margin-left: 13px !important;
+        margin-right: 13px !important;
+    }
+    .worst {
+        top: 120px;
+        left: -74px;
+        font-size: 11px;
+    }
+    .best {
+        right: 103px;
+        font-size: 11px;
+    }
+    .worst-stars {
+        top: 215px;
+    }
+    .best-stars {
+        top: 335px !important;
+    }
+    .ring-image {
+        width: 40px;
+        height: 40px;
+        margin-left: 28px !important;
+        margin-right: 28px !important;
+        
+    }
+    .ring-text {
+        font-size: 10px !important;
+        height: 40px;
+    }
+    .ring-data {
+        width: 20%;
+    }
+    .prev-btn {
+        margin-top: 30px !important;
+    }
+    .next-btn {
+        margin-top: 30px !important;
+    }
+    .question-text {
+        margin-top: 60px;
+        font-size: 16px !important;
+    }
+    .suggestion-box {
+        margin-top: 0px;
+        height: 120px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .next-btn2 {
+        width: 40%;
+        padding: 8px !important;
+    }
+    .questions {
+        width: 100% !important;
+        height: 50px !important;
+        padding-top: 0% !important;
+    }
+    .questions > p {
+        font-size: 22px !important;
+    }
+    .question-text {
+        font-size: 18px !important;
+        margin-top: 30px;
+    }
+    .survey-btn {
+        margin-top: 100px !important;
+        font-size: 20px !important;
+    }
+    .main-box-tab {
+        width: 90% !important;
+    }
+    .censuable-tab {
+        font-size: 10px;
+    }
+    .icon-expand {
+        font-size: 1rem;
+        margin-top: 1px;
+    }
+    .icon-close {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .question-text-tab {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .images-survey-tab {
+        margin-left: 42px !important;
+        margin-right: 42px !important;
+        margin-bottom: 20px;
+        width: 15% !important;
+    }
+    .next-btn2-tab {
+        width: 30% !important;
+        padding: 8px !important;
+    }
+    .questions-tab {
+        margin-top: 10px !important;
+        height: 45px !important;
+        padding: 5px !important;
+        height: 30px !important;
+    }
+    .questions-tab > p {
+        font-size: 12px !important;
+        padding-top: 1px;
+    }
+    .prev-btn-tab {
+        width: 30%;
+        padding: 10px !important;
+    }
+    .next-btn-tab {
+        width: 30%;
+        padding: 10px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .stars-image-tab {
+        margin-right: 18px !important;
+        width: 12% !important;
+        margin-left: 18px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 18px;
+        margin-top: 14px;
+    }   
+    .worst-tab {
+        top: 65px;
+        left: -88px;
+        font-size: 12px
+    }
+    .best-stars-tab {
+        top: 200px !important;
+        right: 42px;
+        font-size: 12px;
+    }
+    .heart-image-tab {
+        margin-right: 11px;
+        margin-left: 11px;
+        margin-bottom: 48px;
+    }
+    .best-tab {
+        top: -42px;
+        left: 378px;
+        font-size: 12px;
+    }
+    .worst-heart-tab {
+        top: 75px;
+        left: -90px;
+        font-size: 12px
+    }
+    .ring-text-tab {
+        margin-top: 0;
+        height: 30px;
+    }
+    .next-btn2-tab2 {
+        margin-top: 10px !important;
+        right: 0;
+    }
+    .ring-image-tab {
+        margin-bottom: 20px;
+    }
+    .suggestion-box-tab {
+        margin-top: 0;
+        height: 102px;
+        font-size: 12px;
+    }
+    .feedback-box-tab {
+        margin-top: 0;
+        height: 130px;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    .feedback-text-tab {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .question-number {
+        font-size: 12px;
+    }
+    .main-box {
+        height: 495px;
+        max-width: 500px;
+        min-width: 500px;
+    }
+    .stars-image {
+        margin-left: 13px !important;
+        margin-right: 13px !important;
+    }
+    .submit-btn {
+        width: 25% !important;
+        padding: 8px !important;
+    }
+    .thankyou-tick-tab {
+        margin-bottom: 20px;
+    }
+    .thankyou-tick {
+        margin-top: 100px;
+    }
+
+
+}
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .images-survey {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .worst {
+       
+        left: -54px !important;
+    }
+    .best {
+        top: 235px !important;
+        right: 80px !important;
+    }
+    .stars-image {
+        margin-right: 6px !important;
+        margin-left: 6px !important;
+    }
+    .ring-image {
+        width: 40px;
+        height: 40px;
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        
+    }
+    .questions {
+        width: 100% !important;
+        height: 50px !important;
+        padding-top: 0% !important;
+    }
+    .questions > p {
+        font-size: 14px !important;
+    }
+    .survey-btn {
+        font-size: 60px !important;
+    }
+    .stars-image-tab {
+        margin-right: 6px !important;
+        width: 15% !important;
+        margin-left: 6px !important;
+    }
+    .best-stars-tab {
+        top: 220px !important;
+        right: 18px !important;
+        font-size: 12px !important;
+    }
+    .worst-tab {
+        font-size: 12px;
+        top: 65px;
+        left: -65px;
+    }
+    .best-tab {
+        top: 10px;
+        left: 218px;
+        font-size: 11px;
+    }
+    .worst-heart-tab {
+        
+            font-size: 11px;
+            top: 56px;
+            left: -60px;
+    }
+    .ring-text-tab {
+        margin-top: 10px;
+    }
+    .best-stars {
+        right: 64px !important;
+        top: 254px !important;
+    }
+    .main-box {
+        margin-bottom: 133px;
+    }
+    .ring-text {
+        margin-left: 12px;
+    }
+    .suggestion-box-tab {
+        height: 130px;
+    }
+    .thankyou-tick {
+        margin-top: 120px;
+    }
+   
+}
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .main-box {
+        margin-bottom: 493px;
+        height: 615px;
+        max-width: 6    00px;
+        min-width: 600px;
+    }
+    .question-text {
+        font-size: 24px;
+    }
+    .images-survey {
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+        margin-top: 15px !important;
+    }
+    .heart-image {
+        width: 14% !important;
+        margin-right: 15px;
+    margin-left: 15px;
+    }
+    .worst {
+        top: 145px;
+    left: -112px;
+    font-size: 20px;
+    }
+    .best {
+        top: 390px;
+    right: 125px;
+    font-size: 20px;
+    }
+    .ring-image {
+        width: 60px;
+        height: 60px;
+        margin-left: 23px !important;
+        margin-right: 40px !important;
+        
+    }
+    .ring-text {
+        font-size: 10px !important;
+        height: 20px;
+    }
+    .ring-data {
+        width: 20%;
+    }
+    .prev-btn {
+        margin-top: 30px !important;
+    }
+    .next-btn {
+        margin-top: 30px !important;
+    }
+    .survey-btn > span {
+        font-size: 35px;
+    }
+    .main-box-tab {
+        width: 80% !important;
+    }
+    .censuable-tab {
+        font-size: 16px;
+    }
+    .icon-expand {
+        font-size: 1rem;
+        margin-top: 1px;
+    }
+    .icon-close {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .question-text-tab {
+        font-size: 20px;
+    }
+    .images-survey-tab {
+        margin-left: 48px !important;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        width: 18% !important;
+    }
+    .next-btn2-tab {
+        width: 30% !important;
+        padding: 12px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .stars-image-tab {
+        margin-right: 20px !important;
+        width: 12% !important;
+        margin-left: 20px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 18px;
+        margin-top: 14px;
+    }   
+    .worst-tab {
+        top: 80px;
+        left: -108px;
+        font-size: 18px;
+    }
+    .best-stars-tab {
+        top: 250px;
+        right: 42px;
+        font-size: 18px;
+    }
+    .best-heart-tab {
+        left: 445px;
+        font-size: 18px;
+        top: -38px;
+    }
+    .heart1-tab {
+        margin-bottom: -50px;
+    }
+    .worst-heart-tab {
+        top: 95px;
+    left: -108px;
+    font-size: 18px;
+    }
+    .next-btn2-tab2 {
+        right: 0;
+    }
+    .suggestion-box-tab {
+        margin-top: 0;
+    }
+    .feedback-text-tab {
+        margin-top: 50px;
+    }
+    .stars-image {
+        margin-left: 21px !important;
+        margin-right: 21px !important;
+
+    }
+    .suggestion-box {
+        margin-bottom: 50px;
+    }
+    .heart-image-tab {
+        margin-bottom: 50px;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .main-box {
+        height: 625px;
+        margin-bottom: 201px;
+        max-width: 800px;
+        min-width: 800px;
+    }
+    .question-text {
+        font-size: 30px;
+    }
+    .images-survey {
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+        margin-top: 15px !important;
+    }
+    .heart-image {
+        width: 14% !important;
+        margin-right: 28px !important;
+    }
+    .worst {
+        top: 155px;
+    left: -138px;
+    }
+    .best {
+        top: 415px;
+    right: 172px;
+    }
+    .ring-image {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px !important;
+        margin-top: 20px;
+        margin-right: 65px !important;
+        
+    }
+    .ring-text {
+        font-size: 14px !important;
+        height: 20px;
+    }
+    .ring-data {
+        width: 20%;
+    }
+    .prev-btn {
+        margin-top: 30px !important;
+    }
+    .next-btn {
+        margin-top: 30px !important;
+    }
+    .main-box-tab {
+        width: 80% !important;
+    }
+    .censuable-tab {
+        font-size: 16px;
+    }
+    .icon-expand {
+        font-size: 1rem;
+        margin-top: 1px;
+    }
+    .icon-close {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .question-text-tab {
+        font-size: 20px;
+    }
+    .images-survey-tab {
+        margin-left: 38px !important;
+        margin-right: 38px !important;
+        margin-bottom: 40px;
+        width: 18% !important;
+    }
+    .next-btn2-tab {
+        width: 30% !important;
+        padding: 12px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .stars-image-tab {
+        margin-right: 12px !important;
+        width: 15% !important;
+        margin-left: 12px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 18px;
+        margin-top: 14px;
+    }   
+    .star1-tab {
+        margin-bottom: -50px;
+    }
+    .worst-tab {
+        top: 90px;
+        left: -107px;
+        font-size: 18px;
+    }
+    .best-stars-tab {
+        top: 284px !important;
+        right: 32px !important;
+        font-size: 18px !important;
+    }
+    .heart-image-tab {
+        margin-right: 24px;
+        margin-bottom: 60px;
+    }
+    .worst-heart-tab {
+            top: 120px;
+    }
+    .best-heart-tab {
+        font-size: 20px;
+        top: 160px;
+        left: 620px;
+    }
+    .next-btn2-tab2 {
+        right: 0;
+    }
+    .suggestion-box-tab {
+        margin-top: 0;
+    }
+    .heart1-tab {
+        height: 0;
+    }
+    .stars-image {
+        margin-right: 20px !important;
+        margin-left: 22px !important;
+    }
+    .suggestion-box {
+        margin-bottom: 50px;
+    }
+    .best-stars {
+        top: 393px !important;
+        right: 172px !important;
+    }
+}
+
+
+
+/* ----------- iPhone X ----------- */
+/* Portrait */  
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    .survey-btn > span {
+        font-size: 20px;
+    }
+    .main-box {
+        margin-bottom: 277px;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .censuable {
+        font-size: 18px;
+    }
+    .icon-close {
+        margin-top: auto;
+    }
+    .progress {
+        height: 5px;
+    }
+    .prev-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .next-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .images-survey {
+        margin-left: 22px !important;
+        margin-right: 22px !important;
+        margin-top: 15px;
+    }
+    .main-box {
+        height: 570px;
+        max-width: 600px;
+        min-width: 600px;
+    }
+    .heart-image {
+        width: 14% !important;
+        margin-right: 17px !important;
+        margin-left: 15px;
+    }
+    .worst {
+        top: 130px;
+        left: -104px;
+        font-size: 15px;
+    }
+    .best {
+        top: 339px;
+        right: 150px !important; 
+        font-size: 15px;
+    }
+    .worst-stars {
+        top: 255px;
+        left: -200px;
+    }
+    .best-stars {
+        top: 340px;
+        right: 91px;
+        
+    }
+    .ring-image {
+        width: 55px;
+        height: 55px;
+        margin-left: 28px !important;
+        margin-right: 44px !important;
+        
+    }
+    .ring-text {
+        font-size: 10px !important;
+        height: 20px;
+    }
+    .ring-data {
+        width: 20%;
+    }
+    .prev-btn {
+        margin-top: 30px !important;
+    }
+    .next-btn {
+        margin-top: 30px !important;
+    }
+    .question-text {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    .suggestion-box {
+        margin-top: 0px;
+        height: 120px;
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+    .survey-btn {
+        margin-top: 150px !important;
+        font-size: 20px !important;
+    }
+    .main-box-tab {
+        max-width: 800px;
+        min-width: 800px;
+        }
+    .censuable-tab {
+        font-size: 10px;
+    }
+    .icon-expand {
+        font-size: 1rem;
+        margin-top: 1px;
+    }
+    .icon-close {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .question-text-tab {
+        font-size: 14px;
+    }
+    .images-survey-tab {
+        margin-left: 60px !important;
+        margin-right: 60px !important;
+        margin-bottom: 20px;
+        width: 15% !important;
+    }
+    .next-btn2-tab {
+        width: 30% !important;
+        padding: 8px !important;
+    }
+    .questions-tab {
+        margin-top: 10px !important;
+        height: 45px !important;
+        padding: 5px !important;
+        height: 30px !important;
+    }
+    .questions-tab > p {
+        font-size: 12px !important;
+        padding-top: 1px;
+    }
+    .prev-btn-tab {
+        width: 30%;
+        padding: 10px !important;
+    }
+    .next-btn-tab {
+        width: 30%;
+        padding: 10px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .stars-image-tab {
+        margin-right: 25px !important;
+        width: 12% !important;
+        margin-left: 29px !important; 
+    }
+    .question-text-tab {
+        margin-bottom: 18px;
+        margin-top: 14px;
+    }   
+    .worst-tab {
+        top: 90px;
+        left: -112px;
+        font-size: 14px;
+    }
+    .best-stars-tab {
+        top: 240px;
+        right: 56px !important;
+        font-size: 14px;
+    }
+    .worst-heart-tab {
+        top: 100px;
+        left: -145px;
+        font-size: 25px;
+    }
+    .best-heart-tab {
+        top: -55px;
+        left: 532px;
+        font-size: 25px;
+    }
+    .heart1-tab {
+        height: 0;
+        margin-bottom: 0;
+    }
+    .next-btn2-tab2 {
+        right: 0;
+    }
+    .ring-text-tab {
+        margin-top: 10px;
+    }
+    .suggestion-box-tab {
+        margin-top: 0;
+    }
+    .heart-image-tab {
+        margin-right: 20px;
+        margin-left: 12px;
+    }
+    .ring-image-tab {
+        margin-bottom: 30px;
+    }
+    .feedback-box-tab {
+        height: 125px;
+        font-size: 15px;
+    }
+    .feedback-text-tab {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    .question-number-tab {
+        font-size: 12px;
+    }
+    .question-number {
+        font-size: 12px;
+    }
+    .stars-image {
+        margin-right: 16px !important;
+        margin-left: 16px !important;
+    margin-top: 40px;
+    }
+    .thankyou-tick-tab {
+        margin-bottom: 60px;
+    }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .heart-image {
+        width: 15% !important;
+        margin-right: 6px !important;
+    }
+    .worst {
+        font-size: 12px;
+        left: -64px !important;
+    }
+    .best {
+        font-size: 12px;
+        right: 75px !important;
+    }
+    .ring-image {
+        width: 40px;
+        height: 40px;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        
+    }
+    .survey-btn > span {
+        font-size: 20px;
+    }
+    .stars-image-tab {
+        margin-right: 6px !important;
+        width: 15% !important;
+        margin-left: 6px !important;
+    }
+    .best-stars-tab {
+        top: 221px !important;
+        right: 20px !important;
+    }
+  
+    .best-tab {
+        left: 240px;
+    }
+    .worst-heart-tab {
+        top: 60px;
+        left: -68px;
+        font-size: 11px;
+        
+    }
+    .main-box {
+        margin-bottom: 202px;
+    }
+    .stars-image {
+        margin-right: 6px !important;
+    }
+    .main-box-tab {
+        padding-bottom: 50px;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .question-number {
+        font-size: 12px;
+    }
+    .question-number-tab {
+        font-size: 12px;
+    }
+    .censuable {
+        font-size: 18px;
+    }
+    .icon-close {
+        margin-top: auto;
+    }
+    .progress {
+        height: 5px;
+    }
+    .prev-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .next-btn {
+        padding: 10px !important;
+        width: 35% !important;
+    }
+    .images-survey {
+        margin-top: 15px !important;
+        margin-left: 18px !important;
+        margin-right: 18px !important;
+    }
+    .heart-image {
+        width: 14% !important;
+        margin-right: 14px !important;
+        margin-left: 15px;
+    }
+    .worst {
+        top: 110px;
+        left: -92px;
+        font-size: 15px;
+    }
+    .best {
+        top: 330px;
+        right: 132px !important; 
+    }
+    .worst-stars {
+        top: 245px;
+        left: -208px;
+    }
+    .best-stars {
+        top: 320px !important;
+        right: 160px !important; 
+        font-size: 15px !important;
+    }
+    .ring-image {
+        width: 64px;
+    height: 64px;
+    margin-left: 19px !important;
+    margin-right: 28px !important;
+        
+    }
+    .ring-text {
+        font-size: 10px !important;
+        height: 20px;
+    }
+    .ring-data {
+        width: 20%;
+    }
+    .prev-btn {
+        margin-top: 30px !important;
+    }
+    .next-btn {
+        margin-top: 30px !important;
+    }
+    .question-text {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .questions > p {
+        font-size: 16px !important;
+        padding-top: 3px;
+    }
+    .suggestion-box {
+        margin-top: 0px;
+        height: 120px;
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+    .feedback-box {
+        margin-bottom: 25px;
+    }
+    .survey-btn {
+        margin-top: 180px !important;
+        font-size: 25px !important;
+    }
+    .main-box-tab {
+        max-width: 700px;
+        min-width: 700px;    
+    }
+    .censuable-tab {
+        font-size: 10px;
+    }
+    .icon-expand {
+        font-size: 1rem;
+        margin-top: 1px;
+    }
+    .icon-close {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+    .question-text-tab {
+        font-size: 14px;
+    }
+    .images-survey-tab {
+        margin-left: 55px !important;
+        margin-right: 55px !important;
+        margin-bottom: 20px;
+        width: 15% !important;
+    }
+    .next-btn2-tab {
+        width: 30% !important;
+        padding: 8px !important;
+    }
+    .questions-tab {
+        margin-top: 10px !important;
+        height: 45px !important;
+        padding: 5px !important;
+        height: 35px !important;
+    }
+    .questions-tab > p {
+        font-size: 12px !important;
+        padding-top: 1px;
+    }
+    .prev-btn-tab {
+        width: 30%;
+        padding: 10px !important;
+    }
+    .next-btn-tab {
+        width: 30%;
+        padding: 10px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .stars-image-tab {
+        margin-right: 20px !important;
+        width: 12% !important;
+        margin-left: 27px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 18px;
+        margin-top: 14px;
+    }   
+   
+    .best-stars-tab {
+        top: 222px !important;
+    right: 80px !important;
+    font-size: 11px !important;
+    }
+    .worst-tab {
+        top: 80px;
+    left: -93px;
+    font-size: 11px;
+    }
+    .best-tab {
+        top: 5px;
+        left: 512px;
+    }
+    .worst-heart-tab {
+        top: 100px;
+        left: -112px;
+        font-size: 17px;
+    }
+    .best-heart-tab {
+        top: -50px !important;
+        left: 501px;
+        font-size: 17px;
+    }
+    .next-btn2-tab2 {
+        right: 0;
+    }
+    .ring-image-tab {
+        margin-bottom: 40px;
+    }
+    .suggestion-box-tab {
+        margin-top: 0;
+    }
+    .feedback-box-tab {
+        margin-top: 0;
+        height: 130px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .feedback-text-tab {
+        font-size: 15px;
+    }
+    .heart-image-tab {
+        margin-right: 16px;
+        margin-left: 14px;
+        margin-bottom: 60px;
+    }
+    .main-box {
+        height: 565px;
+        max-width: 500px;
+        min-width: 500px;
+    }
+    .stars-image {
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+    }
+}
+
+
+
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .worst {
+        top: 175px;
+    left: -152px;
+    font-size: 25px;
+    }
+    .heart-image {
+        width: 15% !important;
+    }
+    .best {
+        top: 419px !important;
+    right: 162px;
+    font-size: 25px;
+    }
+    .worst-stars {
+        top: 310px;
+    }
+    .best-stars {
+        top: 440px;
+    }
+    .images-survey {
+        
+            margin-left: 30px !important;
+            margin-right: 30px !important;
+    }
+    .survey-btn > span {
+        font-size: 45px;
+    }
+    .question-text-tab {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .stars-image-tab {
+        margin-right: 20px !important;
+        width: 12% !important;
+        margin-left: 20px !important;
+    }
+    .question-text-tab {
+        margin-bottom: 18px;
+        margin-top: 14px;
+    }   
+    .worst-tab {
+        top: 70px;
+        left: -102px;
+        font-size: 16px;
+    }
+    .best-stars-tab {
+        top: 270px !important;
+        right: 50px;
+        font-size: 16px !important;
+    }
+    .heart-image-tab {
+        margin-right: 24px;
+    }
+    .worst-heart-tab {
+            top: 120px;
+    }
+    .best-heart-tab {
+        font-size: 20px;
+        left: 620px;
+    }
+    .main-box {
+        height: 610px;
+        margin-bottom: 805px;
+    }
+    .stars-image {
+        margin-right: 20px !important;
+    }
+    .images-survey-tab {
+        margin-left: 38px !important;
+    margin-right: 59px;
+    }
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .survey-btn > span {
+        font-size: 45px;
+    }
+    .suggestion-box-tab {
+        margin-top: 0;
+    }
+    .stars-image-tab {
+        margin-right: 12px !important;
+        margin-left: 12px !important;
+    }
+    .worst-tab {
+        left: -95px;
+    }
+    .best-stars-tab {
+        right: 37px;
+    }
+    .suggestion-box {
+        margin-bottom: 30px;
+    
+    }
+    .worst {
+        left: -158px !important;
+    }
+    .best-stars {
+        top: 485px;
+        right: 276px;
+    }
+    .heart-image-tab {
+        margin-right: 12px !important;
+        margin-left: 12px !important;
+        margin-bottom: 50px;
+    }
+    .best-tab {
+        top: -28px !important;
+        left: 400px !important;
+    }
+    .main-box-tab {
+        max-width: 900px;
+        min-width: 900px;
+    }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .heart-image {
+        width: 14% !important;
+        margin-right: 23px !important;
+        margin-left: 23px !important;
+    }
+    .worst {
+        top: 155px;
+        left: -204px;
+    }
+    .best {
+        top: 345px;
+        right: 115px;
+    }
+    .best-stars-tab {
+        top: 279px !important;
+        right: 29px !important;
+        font-size: 18px !important;
+    }
+    .best-stars {
+        top: 350px !important;
+        right: 56px !important;
+    }
+   
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .images-survey {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .heart-image {
+        width: 15% !important;
+        margin-right: 50px !important;
+    }
+    .worst {
+        top: 305px;
+        left: -185px;
+    }
+    .best {
+        top: 380px;
+        right: 132px;
+    }
+    .worst-stars {
+        top: 320px;
+        left: -198px;
+    }
+    .best-stars {
+        top: 395px;
+        right: 127px;
+    }
+    .ring-image {
+        height: 120px;
+        width: 120px;
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    }
+    .ring-text {
+        width: 90%;
+        height: 80px;
+    }
+    .ring-data {
+        width: 20%;
+    }
+    .best-stars-tab {
+        top: 305px !important;
+        right: 44px !important;
+        font-size: 18px !important;
+    }
+    .best-stars {
+        top: 427px !important;
+        right: 173px !important;
+        font-size: 20px;
+    }
+}
+
+/* Retina */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+    .images-survey-tab {
+        margin-left: 17px;
+    margin-right: 17px;
+    }
+    .images-survey {
+        margin-left: 34px;
+    margin-right: 34px;
+    margin-bottom: 80px;
+    }
+    .heart-image-tab {
+        width: 15%;
+        margin-right: 9px;
+        margin-left: 9px;
+        margin-top: 10px;
+        float: left;
+    }
+    .feedback-text-tab {
+        font-size: 25px;
+    }
+    .best-tab {
+        top: 20px;
+        left: 328px;
+    }
+    .question-text-tab {
+        font-size: 20px;
+    }
+    .heart-image {
+        margin-left: 20px;
+    }
+    .best-heart {
+        top: 455px;
+    right: 220px;
+    }
+    .best-stars-tab {
+        top: 275px;
+        right: 35px;
+    }
+    .worst {
+        left: -152px;
+    }
+    .best-stars {
+        top: 475px;
+    right: 223px;
+    }
+    .ring-text-tab {
+        width: 90%;
+        height: 65px;
+    }
+    .best-stars {
+        right: 217px !important;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1080px) 
+  and (max-device-width: 1080px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+   
+    .question-text-tab {
+        font-size: 18px;
+    }   
+    .images-survey-tab {
+        margin-left: 15px; 
+        margin-right: 15px;
+    }
+    .images-survey {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .next-btn2-tab {
+        width: 30%;
+    }
+    .question-text {
+        margin-bottom: 40px;
+    }
+    .prev-btn-tab {
+        width: 30%;
+    }
+    .next-btn-tab {
+        width: 30%;
+    }
+    .feedback-text-tab {
+        font-size: 22px;
+    }
+    .submit-btn {
+        width: 30%;
+    }
+    .heart-image-tab {
+        margin-right: 9px;
+        margin-left: 9px;
+    }
+    .worst-tab {
+        top: 85px;
+        left: -94px;
+        font-size: 18px;
+    }
+    .best-tab {
+        top: 20px;
+        left: 295px;
+    }
+    .star1-tab {
+        margin-bottom: -50px;
+    }
+    .heart-image {
+        margin-right: 18px;
+        margin-left: 19px;
+    }
+    .worst-heart {
+        top: 185px;
+        left: -138px;
+    }
+    .best-heart {
+        top: 460px;
+        right: 188px;
+    }
+    .stars-image-tab {
+        margin-left: 20px !important;
+    }
+    .best-stars-tab {
+        top: 286px !important;
+        right: 40px !important;
+    }
+    .worst {
+        top: 175px;
+    }
+    .best-stars {
+        top: 470px !important;
+    right: 174px !important;
+    }
+    .main-box {
+        height: 590px;
+    }
+    .ring-image-tab {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-right: 34px;
+        margin-left: 12px;
+    }
+    .ring-text-tab {
+        font-size: 9px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 0px;
+        height: 30px;
+        width: 50%;
+    }
+    .ring-data {
+        margin-left: -16px;
+        margin-right: -82px;
+    }
+    .ring-image-tab {
+        width: 35%;
+    }
+    .ring-text {
+        width: 50%;
+    height: 63px;
+    position: relative;
+    left: 37px;
+    }
+    .ring-image {
+        margin-right: 78px;
+    margin-left: 36px;
+    }
+    .images-survey-tab {
+        margin-left: 16px !important;
+        margin-right: 16px !important;
+    }
+    .images-survey {
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 1600px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .images-survey {
+        margin-bottom: 30px;
+    }
+    .survey-bg {
+        height: 1600px;
+
+    }
+    .best-stars {
+        right: 415px !important;
+        top: 431px !important;
+    }
+
+  }
