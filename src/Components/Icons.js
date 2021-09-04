@@ -52,86 +52,86 @@
 // import stronglyagree1 from '../Assets/Images/circle_green.png';
 
 
-export const great = "https://playground.censubledev.com/web-survey/images/great_icon.svg";
-export const greatActive = "https://playground.censubledev.com/web-survey/images/great_icon_active.svg";
-export const okay =  "https://playground.censubledev.com/web-survey/images/okay_icon.svg"
-export const okayActive =  "https://playground.censubledev.com/web-survey/images/okay_icon_active.svg";
-export const sad =  "https://playground.censubledev.com/web-survey/images/sad_icon.svg";
-export const sadActive =  "https://playground.censubledev.com/web-survey/images/sad_icon_active.svg";
+export const great = "https://playground.censubledev.com/Images/great_icon.svg";
+export const greatActive = "https://playground.censubledev.com/Images/great_icon_active.svg";
+export const okay =  "https://playground.censubledev.com/Images/okay_icon.svg"
+export const okayActive =  "https://playground.censubledev.com/Images/okay_icon_active.svg";
+export const sad =  "https://playground.censubledev.com/Images/sad_icon.svg";
+export const sadActive =  "https://playground.censubledev.com/Images/sad_icon_active.svg";
 
-export const thumbup =  "https://playground.censubledev.com/web-survey/images/thumb_up.svg";
-export const thumbupActive =  "https://playground.censubledev.com/web-survey/images/thumb_up_active.svg";
-export const thumbDown =  "https://playground.censubledev.com/web-survey/images/thumb_down.svg";
-export const thumbDownActive =  "https://playground.censubledev.com/web-survey/images/thumb_up_active.svg";
-export const okHand =  "https://playground.censubledev.com/web-survey/images/ok_hand.svg";
-export const okHandActive =  "https://playground.censubledev.com/web-survey/images/ok_hand_active.svg";
+export const thumbup =  "https://playground.censubledev.com/Images/thumb_up.svg";
+export const thumbupActive =  "https://playground.censubledev.com/Images/thumb_up_active.svg";
+export const thumbDown =  "https://playground.censubledev.com/Images/thumb_down.svg";
+export const thumbDownActive =  "https://playground.censubledev.com/Images/thumb_up_active.svg";
+export const okHand =  "https://playground.censubledev.com/Images/ok_hand.svg";
+export const okHandActive =  "https://playground.censubledev.com/Images/ok_hand_active.svg";
 
-export const stars =  "https://playground.censubledev.com/web-survey/images/sss.png";
-export const startActive =  "https://playground.censubledev.com/web-survey/images/star_active.png";
+export const stars =  "https://playground.censubledev.com/Images/sss.png";
+export const startActive =  "https://playground.censubledev.com/Images/star_active.png";
 
-export const heart =  "https://playground.censubledev.com/web-survey/images/heart_icon.png";
-export const heartActive =  "https://playground.censubledev.com/web-survey/images/heart_icon_png";
+export const heart =  "https://playground.censubledev.com/Images/heart_icon.png";
+export const heartActive =  "https://playground.censubledev.com/Images/heart_icon_png";
 
 //Yes or No
 
-export const YesActive =  "https://playground.censubledev.com/web-survey/images/yes_icon_active.svg";
-export const Yes = "https://playground.censubledev.com/web-survey/images/yes_icon.svg";
+export const YesActive =  "https://playground.censubledev.com/Images/yes_icon_active.svg";
+export const Yes = "https://playground.censubledev.com/Images/yes_icon.svg";
 
-export const MaybeActive =  "https://playground.censubledev.com/web-survey/images/maybe_icon_active.svg";
-export const Maybe =  "https://playground.censubledev.com/web-survey/images/maybe_icon.svg";
+export const MaybeActive =  "https://playground.censubledev.com/Images/maybe_icon_active.svg";
+export const Maybe =  "https://playground.censubledev.com/Images/maybe_icon.svg";
 
-export const NoActive =  "https://playground.censubledev.com/web-survey/images/no_icon_active.svg";
-export const No =  "https://playground.censubledev.com/web-survey/images/no_icon.svg";
+export const NoActive =  "https://playground.censubledev.com/Images/no_icon_active.svg";
+export const No =  "https://playground.censubledev.com/Images/no_icon.svg";
 
 //Stars
 
-export const OnestarActive = "https://playground.censubledev.com/web-survey/images/star_1a.svg";
-export const Onestar = "https://playground.censubledev.com/web-survey/images/star_1.svg";
+export const OnestarActive = "https://playground.censubledev.com/Images/star_1a.svg";
+export const Onestar = "https://playground.censubledev.com/Images/star_1.svg";
 
-export const TwostarActive = "https://playground.censubledev.com/web-survey/images/star_2a.svg";
-export const Twostar = "https://playground.censubledev.com/web-survey/images/star_2.svg";
+export const TwostarActive = "https://playground.censubledev.com/Images/star_2a.svg";
+export const Twostar = "https://playground.censubledev.com/Images/star_2.svg";
 
-export const ThreestarActive = "https://playground.censubledev.com/web-survey/images/star_3a.svg";
-export const Threestar = "https://playground.censubledev.com/web-survey/images/star_3.svg";
+export const ThreestarActive = "https://playground.censubledev.com/Images/star_3a.svg";
+export const Threestar = "https://playground.censubledev.com/Images/star_3.svg";
 
-export const FourstarActive = "https://playground.censubledev.com/web-survey/images/star_4a.svg";
-export const Fourstar = "https://playground.censubledev.com/web-survey/images/star_4.svg";
+export const FourstarActive = "https://playground.censubledev.com/Images/star_4a.svg";
+export const Fourstar = "https://playground.censubledev.com/Images/star_4.svg";
 
-export const FivestarActive = "https://playground.censubledev.com/web-survey/images/star_5a.svg";
-export const Fivestar = "https://playground.censubledev.com/web-survey/images/star_5.svg";
+export const FivestarActive = "https://playground.censubledev.com/Images/star_5a.svg";
+export const Fivestar = "https://playground.censubledev.com/Images/star_5.svg";
 
 //Hearts
 
-export const OneheartActive = "https://playground.censubledev.com/web-survey/images/heart_1a.svg";
-export const Oneheart = "https://playground.censubledev.com/web-survey/images/heart_1.svg";
+export const OneheartActive = "https://playground.censubledev.com/Images/heart_1a.svg";
+export const Oneheart = "https://playground.censubledev.com/Images/heart_1.svg";
 
-export const TwoheartActive = "https://playground.censubledev.com/web-survey/images/heart_2a.svg";
-export const Twoheart = "https://playground.censubledev.com/web-survey/images/heart_2.svg";
+export const TwoheartActive = "https://playground.censubledev.com/Images/heart_2a.svg";
+export const Twoheart = "https://playground.censubledev.com/Images/heart_2.svg";
 
-export const ThreeheartActive = "https://playground.censubledev.com/web-survey/images/heart_3a.svg";
-export const Threeheart = "https://playground.censubledev.com/web-survey/images/heart_3.svg";
+export const ThreeheartActive = "https://playground.censubledev.com/Images/heart_3a.svg";
+export const Threeheart = "https://playground.censubledev.com/Images/heart_3.svg";
 
-export const FourheartActive = "https://playground.censubledev.com/web-survey/images/heart_4a.svg";
-export const Fourheart = "https://playground.censubledev.com/web-survey/images/heart_4.svg";
+export const FourheartActive = "https://playground.censubledev.com/Images/heart_4a.svg";
+export const Fourheart = "https://playground.censubledev.com/Images/heart_4.svg";
 
-export const FiveheartActive = "https://playground.censubledev.com/web-survey/images/heart_5a.svg";
-export const Fiveheart = "https://playground.censubledev.com/web-survey/images/heart_5.svg";
+export const FiveheartActive = "https://playground.censubledev.com/Images/heart_5a.svg";
+export const Fiveheart = "https://playground.censubledev.com/Images/heart_5.svg";
 
 //LikertAnswerTypes
 
-export const StronglydisagreeActive = "https://playground.censubledev.com/web-survey/images/red.png";
-export const Stronglydisagree = "https://playground.censubledev.com/web-survey/images/circle_red.png";
+export const StronglydisagreeActive = "https://playground.censubledev.com/Images/red.png";
+export const Stronglydisagree = "https://playground.censubledev.com/Images/circle_red.png";
 
-export const DisagreeActive = "https://playground.censubledev.com/web-survey/images/red.png";
-export const Disagree = "https://playground.censubledev.com/web-survey/images/circle_red.png";
+export const DisagreeActive = "https://playground.censubledev.com/Images/red.png";
+export const Disagree = "https://playground.censubledev.com/Images/circle_red.png";
 
-export const NeitherAgreeNorDisagreeActive = "https://playground.censubledev.com/web-survey/images/yellow.png";
-export const NeitherAgreeNorDisagree = "https://playground.censubledev.com/web-survey/images/circle_yellow.png";
+export const NeitherAgreeNorDisagreeActive = "https://playground.censubledev.com/Images/yellow.png";
+export const NeitherAgreeNorDisagree = "https://playground.censubledev.com/Images/circle_yellow.png";
 
-export const AgreeActive = "https://playground.censubledev.com/web-survey/images/light-green.png";
-export const Agree = "https://playground.censubledev.com/web-survey/images/circle_light.png";
+export const AgreeActive = "https://playground.censubledev.com/Images/light-green.png";
+export const Agree = "https://playground.censubledev.com/Images/circle_light.png";
 
-export const StronglyagreeActive = "https://playground.censubledev.com/web-survey/images/new1.png";
-export const Stronglyagree = "https://playground.censubledev.com/web-survey/images/circle_green.png";
+export const StronglyagreeActive = "https://playground.censubledev.com/Images/new1.png";
+export const Stronglyagree = "https://playground.censubledev.com/Images/circle_green.png";
 
 
