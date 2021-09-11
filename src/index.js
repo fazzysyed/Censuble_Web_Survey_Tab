@@ -11,8 +11,9 @@ ReactDOM.render(
 
 
     <App  
-   link = {myScript.getAttribute('link')}
-    
+
+   deviceToken = {myScript.getAttribute("deviceToken")}
+
     />
   </React.StrictMode>,
   document.getElementById('root')

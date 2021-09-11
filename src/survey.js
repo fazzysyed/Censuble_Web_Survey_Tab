@@ -22,6 +22,7 @@ import { facesAnswerType,YesorNoAnswerTpes,thumbsAnswerTpes, HeartsAnswersTypes,
 import './style.css';
 import './Responsive.css';
 import TakeSurvey from './Components/TakeSurvey';
+import moment from "moment"
 
 class Survey extends React.Component{
     state = {
@@ -66,11 +67,10 @@ feedbackText = () => {
   const {feedback_text} = this.state;
   if(feedback_text.length){
   var myHeaders = new Headers();
-  myHeaders.append('Authorization', `Bearer ${this.props.bearer}`);
+
 
   let formdata = new FormData();
-  formdata.append('survey_uuid', this.state.survey.uuid,);
-  formdata.append('user_key', this.props.userKey);
+  formdata.append('survey_uuid', this.state.survey.uuid);
   formdata.append('feedback_topic', 'general');
   formdata.append('answer_id', '0');
   formdata.append('answer_type', 'feedback');
@@ -85,7 +85,7 @@ feedbackText = () => {
     redirect: 'follow',
   };
 
-  fetch('https://services.censuble.com/api/v1/feedback', requestOptions)
+  fetch('https://services.censuble.com/api/v1/web-feedback', requestOptions)
     .then((response) => response.text())
     .then((result) => {
       console.log(JSON.parse(result), 'fafafaf');
@@ -111,20 +111,112 @@ feedbackText = () => {
 
 
 getDevice =()=>{
-  var axios = require('axios');
+  this.setState({
+    responses: [],
+    data: [],
+    multiple: [],
+    index: 0,
+    highValue: null,
+    surveyLength: 0,
+    surveyNumber: 0,
+    startTime: '',
+    survey: null,
+    uuid: null,
+    timeEqualSurveys: [],
+    facesAnswer: null,
+    visible: false,
+  });
+this.setState({loading:true})
+  
 
-var config = {
-  method: 'get',
-  url: `https://services.censuble.com/api/v1/device/${this.props.device_uuid}`,
-  headers: { 
-    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NlcnZpY2VzLmNlbnN1YmxlLmNvbS9hcGkvYXV0aC9sb2dpbiIsImlhdCI6MTYyMTAxNjAyOCwiZXhwIjoxNjUyNTUyMDI4LCJuYmYiOjE2MjEwMTYwMjgsImp0aSI6IkZrZzBmUDJNNk9NTGhzZ08iLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.EfEefjykkY3_a9h0YpLKKGJi3lI2zoVFsvYo0kwQ1evzGAiYD3YZsu5JQpegNf646ebmCJxU12kCOK-0Ik_e2B_b2hYbvAfXKZnpOUGBrB3eXK34lc_SqLU0j6cqLjtb_EbQZrk33OfizTvv81CJbPX2ZpdMlMoghcXpYlC_gJfA9yMk3zff6w0me4qY0rpCKAdLlVzpXZ8aD7Ucg5vcgLAf96nO11B023FD4nj-KlaROM2Xc6plJ8WEPIiy6xvqYzlh20Y7uoTtTUqw2-tSE-Dqxq3B4jS_5bIH1qEqt4URvdI5LJaOzVptDzf0vdD2RPhjkixEYR0UNucdKG8lJ0_xH-bKQGL6ITCRMpmbZVPixoe74w0dhk9AotrNa5B_lm4BYMEwhPpMjL21QebzRToCQq4tnuc8w94DbCSIAGYVfifNAOEBc-bBMMeOqTM_etXD7do6lQHuoHhNWoDrHGN1L_KiMJFENVeewezntyLOGENUqD7uIcqgrIkC9a20CF5n3nxM13M4ZV0hxGxgJLp5LNYxMy0Jugriajn_NWUqVSmEucmU-2jNxlurlzg9YZsV2K4V0lmwVCPQMjm0-f-o7d9kL4l1HLS-E0T7gu4n6hahYIlQyy6lPqv0BQjtn40GnjDo4Gx7cLk5yLTtOwsBKEQteOWnIisHP8t4cMM'
-  }
-};
 
+  var config = {
+    method: 'get',
+    url: `https://services.censuble.com/api/v1/device-surveys/${this.props.deviceToken}`,
+    headers: { }
+  };
+  
+  // var config = {
+  //   method: 'get',
+  //   url: 'https://services.censuble.com/api/v1/device/JRJR-JRJ-RLC',
+  //   headers: { 
+  //     'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NlcnZpY2VzLmNlbnN1YmxlLmNvbS9hcGkvYXV0aC9sb2dpbiIsImlhdCI6MTYyMTAxNjAyOCwiZXhwIjoxNjUyNTUyMDI4LCJuYmYiOjE2MjEwMTYwMjgsImp0aSI6IkZrZzBmUDJNNk9NTGhzZ08iLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.EfEefjykkY3_a9h0YpLKKGJi3lI2zoVFsvYo0kwQ1evzGAiYD3YZsu5JQpegNf646ebmCJxU12kCOK-0Ik_e2B_b2hYbvAfXKZnpOUGBrB3eXK34lc_SqLU0j6cqLjtb_EbQZrk33OfizTvv81CJbPX2ZpdMlMoghcXpYlC_gJfA9yMk3zff6w0me4qY0rpCKAdLlVzpXZ8aD7Ucg5vcgLAf96nO11B023FD4nj-KlaROM2Xc6plJ8WEPIiy6xvqYzlh20Y7uoTtTUqw2-tSE-Dqxq3B4jS_5bIH1qEqt4URvdI5LJaOzVptDzf0vdD2RPhjkixEYR0UNucdKG8lJ0_xH-bKQGL6ITCRMpmbZVPixoe74w0dhk9AotrNa5B_lm4BYMEwhPpMjL21QebzRToCQq4tnuc8w94DbCSIAGYVfifNAOEBc-bBMMeOqTM_etXD7do6lQHuoHhNWoDrHGN1L_KiMJFENVeewezntyLOGENUqD7uIcqgrIkC9a20CF5n3nxM13M4ZV0hxGxgJLp5LNYxMy0Jugriajn_NWUqVSmEucmU-2jNxlurlzg9YZsV2K4V0lmwVCPQMjm0-f-o7d9kL4l1HLS-E0T7gu4n6hahYIlQyy6lPqv0BQjtn40GnjDo4Gx7cLk5yLTtOwsBKEQteOWnIisHP8t4cMM'
+  //   }
+  // };
+  
+  
 axios(config)
 .then( (response)=> {
   this.setState({config:response.data.data.device})
   console.log(response.data.data.device,"Hellofafa");
+  response.data.data.device.survey_list.map((el) => {
+    console.log(el, 'Survey List');
+  
+    var hours = new Date().getHours(); //To get the Current Hours
+    var min = new Date().getMinutes(); //To get the Current Minutes
+    var sec = new Date().getSeconds(); //To get the Current Seconds
+    this.setState({ startTime: `${hours}${min}${sec}` });
+    let currentTime = moment(`${hours}:${min}:${sec}`, 'hh:mm');
+  
+    var days = [0, 1, 2, 3, 4, 5, 6];
+    var dayName = days[new Date().getDay()];
+    console.log(dayName, 'DAyName');
+    // this.getCompanyName();
+    for (let item of el.schedules) {
+      let starttime = moment(item.time_start, 'hh:mm');
+      let endtime = moment(item.time_end, 'hh:mm');
+  
+      if (
+        currentTime.isBefore(endtime) &&
+        currentTime.isAfter(starttime) &&
+        item.day === dayName
+      ) {
+        this.state.timeEqualSurveys.push({ surveyuid: el.uuid });
+      }
+    }
+  });
+  
+}).then(()=>{
+
+
+
+
+
+const { timeEqualSurveys } = this.state;
+
+let survey =
+  timeEqualSurveys[
+  Math.floor(Math.random() * timeEqualSurveys.length)
+  ];
+  console.log(this.state.config.uuid,"ID" ,survey.surveyuid)
+
+  let configs = {
+    method: 'get',
+    url: `https://services.censuble.com/api/v1/web-survey/${this.state.config.company_uuid}/${survey.surveyuid}`,
+    headers: { }
+  };
+  
+ axios(configs)
+  .then((response) => {
+
+    console.log('Survey', response.data.data.survey.questions);
+    this.setState({ survey: response.data.data.survey });
+ 
+
+    let survey = response.data.data.survey.questions;
+    console.log(survey, "GGGGGGGGGGGGGGG")
+
+    this.setState({ data: survey, surveyLength: survey.length });
+
+ 
+  })
+  .then((result) => {
+    this.setState({
+      progress: 1 / this.state.data.length,
+      loading:false
+    });
+  });
+
 })
 .catch(function (error) {
   console.log(error);
@@ -151,48 +243,20 @@ apiCall = async () => {
   });
 this.setState({loading:true})
 
-    console.log('efe4adfa-566a-4bd6-a952-78344aff1f21');
-    this.setState({loading: true});
-    var config = {
-      method: 'get',
-      url: this.props.link,
-      headers: { }
-    };
-    
-    axios(config)
-   
-   
 
 
-    
 
-      .then((response) => {
-        
-          console.log('Survey', response.data.data.survey.questions);
-          this.setState({survey: response.data.data.survey});
-       
 
-          let survey = response.data.data.survey.questions;
-          this.setState({data: survey, surveyLength: survey.length});
-
-         
-        })
-        .then((result) => {
-          this.setState({
-            progress: 1 / this.state.data.length,
-            loading : false
-
-          });
-        })
-      .catch(error => console.log('error', error));              
-};
+}
 
    
       
       uploadResponse = async () => {
         this.setState({data: []});
-    
         const {config, data, companyName} = this.state;
+
+        console.log(data,"Ready",this.state.survey)
+    
        
         let responses = [];
         data.map((value) => {
@@ -204,8 +268,8 @@ this.setState({loading:true})
                 survey_name: this.state.survey.name,
                 survey_category: '0',
                 question_id: value.question_id,
-                answer_text: item.answer,
-                answer_id: item.answer_id,
+                answer_text: item.answer_text,
+                answer_id: item.master_id,
     
                 parent_question_id: value.parent_question_id
                   ? value.parent_question_id
@@ -213,7 +277,7 @@ this.setState({loading:true})
                 question_text: value.question_text,
                 question_type: value.answer_type,
                 timestamp: Math.ceil(new Date().getTime() / 1000),
-                user_uuid: this.props.user_uuid,
+                user_uuid: 1,
                 transaction_id: this.uuid(),
                 testmode: false,
     
@@ -232,8 +296,8 @@ this.setState({loading:true})
               survey_name: this.state.survey.name,
               survey_category: '0',
               question_id: value.question_id,
-              answer_text: value.answerWithId.answer,
-              answer_id: value.answerWithId.id,
+              answer_text: value.answerWithId.answer_text,
+              answer_id: value.answerWithId.master_id,
     
               parent_question_id: value.parent_question_id
                 ? value.parent_question_id
@@ -241,7 +305,7 @@ this.setState({loading:true})
               question_text: value.question_text,
               question_type: value.answer_type,
               timestamp: Math.ceil(new Date().getTime() / 1000),
-              user_uuid: this.props.user_uuid,
+              user_uuid: 1,
               transaction_id: this.uuid(),
               testmode: false,
               category_id: '0',
@@ -254,14 +318,16 @@ this.setState({loading:true})
             });
           }
         });
+        console.log(responses,"Ready")
     
         let data2 = {
           config: {
             device_uuid: this.state.config.uuid,
-            device_name: this.state.config.name,
+            device_name: this.state.config.company_name,
             device_location: this.state.config.location_name,
             company_name: this.state.config.company_name,
             company_uuid: this.state.config.company_uuid,
+            timezone : this.state.config.company_timezone
           },
           responses: responses,
           outage: {
@@ -273,9 +339,9 @@ this.setState({loading:true})
     
             var configuration = {
               method: 'post',
-              url: 'https://services.censuble.com/api/v1/response',
+              url: 'https://services.censuble.com/api/v1/web-survey',
               headers: {
-                Authorization: `Bearer ${this.props.bearer}`,
+          
                 'Content-Type': 'application/json',
               },
               data: data2,
@@ -298,7 +364,8 @@ this.setState({loading:true})
 
     
       next = (value, index) => {
-        this.setState({visible: false, highValue: null});
+        console.log(this.state.facesAnswer, "Hey")
+        this.setState({ visible: false, highValue: null });
     
         console.log(value, 'REsponse');
         let foundR = this.state.responses.some(
@@ -306,27 +373,28 @@ this.setState({loading:true})
         );
         console.log(foundR, 'gsgsgsgs');
         console.log('Hihe', this.state.highValue);
-        this.setState({highValue: value});
+        this.setState({ highValue: value });
         var hours = new Date().getHours(); //To get the Current Hours
         var min = new Date().getMinutes(); //To get the Current Minutes
         var sec = new Date().getSeconds();
     
         let timestamp = `${hours}${min}${sec}`;
-        const {facesAnswer, data, progress, surveyLength} = this.state;
+        const { facesAnswer, data, progress, surveyLength } = this.state;
         console.log(facesAnswer, 'fafafafaHello');
     
         let length2 = data.length;
         if (this.state.facesAnswer != null && facesAnswer.length === undefined) {
           if (value.subquestions != undefined) {
             value.subquestions.map((it) => {
+              console.log(it, "YOYOYO")
               const found = data.some((el) => el.question_id === it.question_id);
               it.parent_question_id = value.question_id;
+    
     
               if (!found) {
                 if (it.answer_link_id.includes(facesAnswer.id)) {
                   this.state.data.splice(index + 1, 0, it);
-                  console.log(this.state.data, 'CCCCCCCC');
-                } else if (it.answer_link_id === 0) {
+                } else if (it.answer_link_id.includes(0)) {
                   this.state.data.splice(index + 1, 0, it);
                   console.log(this.state.data, 'DDDDDDDD');
                 }
@@ -351,32 +419,33 @@ this.setState({loading:true})
             multiple: [],
           });
           if (data[index + 1].answerWithId === undefined) {
-            this.setState({facesAnswer: null});
+            this.setState({ facesAnswer: null });
           }
     
           if (facesAnswer.length) {
             facesAnswer.map((item) => {
-              console.log(item, 'GGGAFfafafafaf');
-              if(value.subquestions != null )
-            {
-              value.subquestions.map((it) => {
-                const found = data.some((el) => el.question_id === it.question_id);
-                it.parent_question_id = value.question_id;
+              console.log(item, 'GGGAFfafafafaf', value);
     
-                if (!found) {
-                  if (it.answer_link_id.includes(item.answer_id)) {
-                    this.state.data.splice(index + 1, 0, it);
-                  } else if (it.answer_link_id === 0) {
-                    this.state.data.splice(index + 1, 0, it);
+              if (value.sub_questions != null) {
+                value.subquestions.map((it) => {
+                  const found = data.some((el) => el.question_id === it.question_id);
+                  it.parent_question_id = value.question_id;
+    
+                  if (!found) {
+                    if (it.answer_link_id.includes(item.id)) {
+                      this.state.data.splice(index + 1, 0, it);
+                    } else if (it.answer_link_id.includes(0)) {
+                      this.state.data.splice(index + 1, 0, it);
+                    }
                   }
-                }
-              });
-            }
+                });
+              }
               console.log(this.state.data, 'Chalo naa Response');
             });
             if (value.subquestions === undefined || length2 === data.length) {
+              console.log("GGGAFfafafafaf")
               this.setState({
-                surveyNumber: this.state.surveyNumber + 1,
+                surveyNumber: this.state.surveyNumber,
                 progress: progress + 1 / surveyLength,
               });
             }
@@ -402,16 +471,19 @@ this.setState({loading:true})
             facesAnswer.map((item) => {
               console.log(item, 'FAcesArray');
               if (value.subquestions != undefined) {
-                value.subquestions.map((it) => {
+                value.sub_questions.map((it) => {
                   const found = data.some(
                     (el) => el.question_id === it.question_id,
                   );
                   it.parent_question_id = value.question_id;
     
                   if (!found) {
-                    if ( it.answer_link_id(item.answer_id)) {
+                    if (it.answer_link_id.includes(item.id)) {
+                      console.log("YYYESSSS")
                       this.state.data.splice(index + 1, 0, it);
-                    } else if (it.answer_link_id === 0) {
+                    } else if (it.answer_link_id.includes(0)) {
+                      console.log("NOOOOO")
+    
                       this.state.data.splice(index + 1, 0, it);
                     }
                   }
@@ -466,9 +538,13 @@ this.setState({loading:true})
       <div className={minimize ? null : "survey-bg"}>
         
             <Box className={minimize ? "main-box-tab" : "main-box"} bgcolor="white" boxShadow="2" p="24px" mt="50px" width="100%">
+              <div style = {{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
                 <p className="censuable-tab">Powered by <a href="https://www.censuble.com/" target="_blank">Censuble</a></p>
+                <div>
                 {minimize ? <AiOutlineArrowsAlt className="icon-expand" onClick = {()=>this.setState({minimize:!this.state.minimize})}/> : <AiOutlineShrink className = "icon-expand" onClick = {()=>this.setState({minimize:!this.state.minimize})}/>}
                 <FaWindowClose className="icon-close" onClick = {this.props.close}/>
+                </div>
+                </div>
                 {this.state.loading ? <img className="loading-icon" src ={"https://playground.censubledev.com/Images/animated.gif"}/> :        
           
           <>
@@ -485,7 +561,8 @@ this.setState({loading:true})
                 if (index === this.state.index) {
                   return (
                     <div key={index} style={{float:"left", width: "100%"}}>
-                 <h3 className={minimize ? "question-text-tab" : "question-text"}>  {item.question_text}</h3>
+                 <h3 className={minimize ? "question-text-tab" : "question-text"}>{item.question_text}
+                   </h3>
                       <div
                         style={{
                           height: '50%',

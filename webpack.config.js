@@ -7,8 +7,25 @@ module.exports = {
   output: {
     filename: "build/static/js/Survey.js",
   },
+  
+  
   module: {
     rules: [
+   
+   
+      {
+        test: /\.(woff|woff2|ttf|otf)$/,
+        loader: 'file-loader',
+        include: [/fonts/],
+  
+        options: {
+          name: '[hash].[ext]',
+          outputPath: 'css/',
+          publicPath: url => '../css/' + url
+        }
+      },
+      
+    
         {
             test: /\.(png|svg|jpg|gif)$/,
             use: ['file-loader']

@@ -10,25 +10,29 @@ const StarsAnswers = ({onPress, value,minimize}) => {
 
 
   return (
-    <div>
+    <div style = {{display:"flex",flexDirection:"row"}}>
       {StarsAnswersTypes.map((item, index) => {
         return (
-          <div className={minimize ? "star1-tab" : "star1"  }   
+          <div    
             key={item.id}
             onClick={() => {
               setDefaultRating(item.id);
               onPress(item);
             }}>
-            <img className={minimize ? "heart-image stars-image-tab" : "heart-image stars-image"}
+            <img 
+            className={minimize ? "heart-image stars-image-tab" : "heart-image stars-image"}
               resizeMode="contain"
               
               src={item.id <= defaultRating ? item.selected : item.un}
             />
            
+            <div>
             {index === 0 ? (
               <p className={minimize ? "worst-tab" : "worst"} style={{
                 color: 'black',
                 fontFamily: 'Poppins-Bold',
+                textAlign:"center"
+
                 
               }}>Worst Rating</p>
             ) : null}
@@ -36,9 +40,11 @@ const StarsAnswers = ({onPress, value,minimize}) => {
               <p className={minimize ? "best best-stars-tab" : "best best-stars"} style={{
                 color: 'black',
                 fontFamily: 'Poppins-Bold',
+                textAlign:"center"
                 
               }}>Best Rating</p>
             ) : null}
+              </div>
           </div>
         );
       })}
