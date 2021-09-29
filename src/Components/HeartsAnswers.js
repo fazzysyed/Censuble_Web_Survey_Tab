@@ -16,38 +16,49 @@ const HeartsAnswers = ({onPress, value,minimize}) => {
       flexDirection: 'row',
 
     }} >
+       <div style = {{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
       {HeartsAnswersTypes.map((item, index) => {
         return (
-          <div 
-            className={minimize ? "heart1-tab"  : "heart1"  }     
+          <div    
             key={item.id}
+          style = {{width:"100%"}}
+
             onClick={() => {
               setDefaultRating(item.id);
               onPress(item);
             }}>
-            <img className={minimize ? "heart-image-tab" : "heart-image"}
+            <img 
+            className={minimize ? "heart-image stars-image-tab" : "heart-image stars-image"}
               resizeMode="contain"
               
               src={item.id <= defaultRating ? item.selected : item.un}
             />
            
+            <div>
             {index === 0 ? (
-              <p className= {minimize ? "worst-tab worst-heart-tab" : "worst worst-heart"} style={{
+              <p className={minimize ? "worst-tab" : "worst"} style={{
                 color: 'black',
                 fontFamily: 'Poppins-Bold',
+                textAlign:"center"
+
                 
               }}>Worst Rating</p>
             ) : null}
             {index === HeartsAnswersTypes.length - 1 ? (
-              <p className={minimize ? "best-tab best-heart-tab" : "best best-heart"} style={{
+              <p className={minimize ? "best best-stars-tab" : "best best-stars"} style={{
                 color: 'black',
                 fontFamily: 'Poppins-Bold',
+                textAlign:"center"
                 
               }}>Best Rating</p>
             ) : null}
+              </div>
           </div>
         );
       })}
+      {/* <Text style={{fontSize: 50, fontWeight: 'bold'}}>{1 + 1}</Text> */}
+    </div>
+  
       {/* <Text style={{fontSize: 50, fontWeight: 'bold'}}>{1 + 1}</Text> */}
     </div>
   );

@@ -3,20 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-const myScript = document.getElementById('bundle');
+const myScript = window.censuble_survey;
+
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-
-
     <App  
-
-   deviceToken = {myScript.getAttribute("deviceToken")}
-
+  censuble_survey = {myScript}
     />
   </React.StrictMode>,
-  document.getElementById('root')
+ myScript.embed_type === "tab" ?  document.body.appendChild(document.createElement("DIV")) : document.getElementById(myScript.embed_location) 
 );
 
 

@@ -4,14 +4,21 @@ import { FaAngleDown } from "react-icons/fa";
 
 
 
-function TakeSurvey({Click}) {
+function TakeSurvey({Click,visible}) {
     return (
-        <div className="take-survey" onClick = {Click}>
-            <Button className="survey-btn" variant="contained" color="primary">
-                Take Our Survey
-            <FaAngleDown className="down-arrow"/>
-            </Button>
-        </div>
+       <>
+       {!visible ? 
+       
+       <div className="take-survey" onClick = {Click}>
+       <Button className="survey-btn" variant="contained" color="primary">
+           Take Our Survey
+       <FaAngleDown className="down-arrow"/>
+       </Button>
+   </div> 
+   : null
+    
+    }
+       </>
     )
 }
 

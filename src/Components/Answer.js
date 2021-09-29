@@ -47,7 +47,7 @@ class Answer extends React.Component {
           marginTop: '20px'
         }}>
         {this.props.answerTypes.map((item) =>  {
-          console.log(item,"KKKK")
+          // console.log(item,"KKKK")
           return( 
          
        

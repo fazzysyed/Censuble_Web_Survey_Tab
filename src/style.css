@@ -9,6 +9,12 @@
   color: #000;
   text-decoration: underline;
 }
+.survey-Tab-Int {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  z-index: 999999999;
+}
 .censuable-tab {
   font-size: 12px;
   float: left;
@@ -37,6 +43,16 @@
   background-color: #474747;
   padding-top: 1px;
   min-height: 100vh;
+  position: fixed;
+  bottom: 0%;
+  z-index: 99999;
+  width: 100%;
+}
+
+.survey-embded {
+  background-color: #ffffff;
+  padding-top: 1px;
+  min-height: 100vh;
 }
 
 .main-box {
@@ -57,6 +73,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 9999;
 }
 .progress {
   display: block;
@@ -176,17 +193,7 @@
   margin-top: 15px !important;
   cursor: pointer;
 }
-.questions {
-  border: 1px solid;
-  cursor: pointer;
-  height: 55px !important;
-}
-.questions > p {
-  font-family: "Poppins", sans-serif !important;
-  padding-top: 0px;
-  font-weight: 800;
-  cursor: pointer;
-}
+
 .questions-tab {
   border: 1px solid;
   width: 100% !important;
@@ -219,9 +226,13 @@
 }
 .best-stars {
   font-size: 20px;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: bolder;
 }
 .best-stars-tab {
   font-size: 16px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: bolder;
 }
 .suggestion-box {
   float: left;
@@ -239,7 +250,7 @@
 .suggestion-box-tab {
   float: left;
   width: 100%;
-  margin-top: 50px;
+
   height: 210px;
   border: 1px solid #d6d6d6;
   padding: 10px;
@@ -359,6 +370,8 @@
   position: fixed;
   left: 0;
   bottom: 0;
+  z-index: 9999;
+  width: 100%;
 }
 .loading-icon {
   width: 25%;
@@ -369,12 +382,14 @@
 }
 .stars-image {
   width: 15%;
+  cursor: pointer;
   margin-right: 59px;
   margin-top: 60px;
   float: left;
 }
 .stars-image-tab {
   width: 80% !important;
+  cursor: pointer;
 }
 .star1 {
   height: 0;
@@ -383,6 +398,7 @@
 }
 .heart-image {
   width: 80%;
+  cursor: pointer;
 }
 .heart-image-tab {
   width: 15%;
@@ -655,20 +671,12 @@
     font-size: 20px;
   }
   .suggestion-box {
-    margin-top: 0px;
+    margin-top: 20px;
     height: 120px;
     font-size: 12px;
     margin-bottom: 50px;
   }
-  .questions {
-    width: 100% !important;
-    height: 50px !important;
-    padding-top: 0% !important;
-  }
-  .questions > p {
-    font-size: 18px !important;
-    padding-top: 10px;
-  }
+
   .survey-btn {
     margin-top: 150px !important;
     font-size: 20px !important;
@@ -730,6 +738,7 @@
     margin-right: 20px !important;
     width: 12% !important;
     margin-left: 22px !important;
+    cursor: pointer;
   }
   .question-text-tab {
     margin-bottom: 18px;
@@ -892,15 +901,7 @@
     width: 50%;
     padding: 8px !important;
   }
-  .questions {
-    width: 100% !important;
-    height: 50px !important;
-    padding-top: 0% !important;
-  }
-  .questions > p {
-    font-size: 15px !important;
-    padding-top: 14px;
-  }
+
   .survey-btn > span {
     font-size: 15px;
   }
@@ -1096,14 +1097,7 @@
     width: 40%;
     padding: 8px !important;
   }
-  .questions {
-    width: 100% !important;
-    height: 50px !important;
-    padding-top: 0% !important;
-  }
-  .questions > p {
-    font-size: 22px !important;
-  }
+
   .question-text {
     font-size: 18px !important;
     margin-top: 30px;
@@ -1266,14 +1260,7 @@
     margin-left: 8px !important;
     margin-right: 8px !important;
   }
-  .questions {
-    width: 100% !important;
-    height: 50px !important;
-    padding-top: 0% !important;
-  }
-  .questions > p {
-    font-size: 14px !important;
-  }
+
   .survey-btn {
     font-size: 60px !important;
   }
@@ -1940,10 +1927,7 @@
     margin-top: 25px;
     font-size: 20px;
   }
-  .questions > p {
-    font-size: 16px !important;
-    padding-top: 3px;
-  }
+
   .suggestion-box {
     margin-top: 0px;
     height: 120px;

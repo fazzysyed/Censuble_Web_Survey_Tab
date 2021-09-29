@@ -13,7 +13,7 @@ const FacesAnswers = ({answerTypes, onPress, value,minimize}) => {
     else setSelected(item.id);
     onPress(item);
   };
-  console.log(answerTypes)
+  // console.log(answerTypes)
   return (
     <div style={{justifyContent: 'space-between',flexDirection:"row" }}>
       {answerTypes.map((item) => {

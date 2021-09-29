@@ -6,6 +6,10 @@ const Suggestion = (props) => {
 
   const [value, setValue] = useState('');
 
+  useEffect(()=>{
+    props.onFocus()
+  },[])
+
   return (
     <div style={{
         // marginTop: 20,
@@ -25,11 +29,11 @@ const Suggestion = (props) => {
     }}>
       <textarea className={props.minimize ?"suggestion-box-tab" : "suggestion-box"}
         // editable={false}
-        // autoFocus={true}
+      
         multiline={true}
-        onFocus = {true}
+      
         value={props.value}
-        // onChangeText={props.onChangeText}
+        onChange={props.onChangeText}
         returnKeyType="next"
         placeholder= "Your Suggestion Here..."
       />

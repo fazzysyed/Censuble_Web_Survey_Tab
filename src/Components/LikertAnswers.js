@@ -12,7 +12,7 @@ const LikertsAnswers = ({answerTypes, onPress, value,minimize}) => {
     onPress(item);
   };
   return (
-    <div style={{justifyContent: 'space-evenly', flexDirection: 'row'}}>
+    <div style={{display:"flex", flexDirection: 'row',justifyContent:"space-between"}}>
       {answerTypes.map((item, index) => {
         return (
           <div>

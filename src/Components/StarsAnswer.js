@@ -7,13 +7,22 @@ const StarsAnswers = ({onPress, value,minimize}) => {
   const [defaultRating, setDefaultRating] = useState(value);
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
+  const [imgsLoaded, setImgsLoaded] = useState(false)
+
 
 
   return (
-    <div style = {{display:"flex",flexDirection:"row"}}>
+    <div style = {{display:"-webkit-flex",flexDirection:"row",justifyContent:"space-between",
+    
+
+  
+display:"flex"
+    
+    }}>
       {StarsAnswersTypes.map((item, index) => {
         return (
           <div    
+          style = {{width:"100%"}}
             key={item.id}
             onClick={() => {
               setDefaultRating(item.id);
@@ -37,7 +46,7 @@ const StarsAnswers = ({onPress, value,minimize}) => {
               }}>Worst Rating</p>
             ) : null}
             {index === StarsAnswersTypes.length - 1 ? (
-              <p className={minimize ? "best best-stars-tab" : "best best-stars"} style={{
+              <p className={minimize ? " best-stars-tab" : "best-stars"} style={{
                 color: 'black',
                 fontFamily: 'Poppins-Bold',
                 textAlign:"center"

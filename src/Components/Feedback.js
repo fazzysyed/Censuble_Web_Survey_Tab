@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { Button } from '@material-ui/core';
 import feedbackImage from '../Assets/Images/thanks-bg.png';
-import { Tick } from 'react-crude-animated-tick';
+import Thanks from './thanks';
 
 
 function Feedback({minimize,feedback,handler,feed,sendFeedback}) {
@@ -29,13 +29,7 @@ placeholder= "Your Feedback Here..."
 <Button className="submit-btn" variant="contained" color="primary" onClick = {sendFeedback}>
         Submit
 </Button>
-</div>  :   <div  className= {minimize ? "thankyou-tick-tab" : "thankyou-tick"}>
-        <div>
-            <Tick size={100} />
-        </div>
-        <h2>Thank You</h2>
-        <p>Your feedback has been submitted.</p>
-        </div> }
+</div>  :  <Thanks minimize = {minimize} />}
 
      
 
